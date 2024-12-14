@@ -34,8 +34,7 @@ Fakegram is a social networking application where users can create accounts, add
 To set up and run the Fakegram application, follow these steps:
 
 ### Prerequisites
-1. **Java Development Kit (JDK)**: Ensure you have JDK 11 or higher installed.
-2. **PostgreSQL**: Install PostgreSQL and set up a database.
+1. **PostgreSQL**: Install PostgreSQL and set up a database.
 
 ### Steps
 
