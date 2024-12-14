@@ -245,6 +245,8 @@ public class LoginFormController {
     }
 
     public void initializeResources(String url, String user, String password) {
+        TableDBCreator tableDBCreator = new TableDBCreator(url, user, password);
+        tableDBCreator.checkTablesAndCreateIfNonExistent();
         UserDBRepository userDBRepository = new UserDBRepository(new UserValidator(), url, user, password);
         UserService userService = new UserService(userDBRepository);
         FriendshipDBRepository friendshipDBRepository = new FriendshipDBRepository(new FriendshipValidator(), url, user, password);
