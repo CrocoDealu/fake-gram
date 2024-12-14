@@ -63,10 +63,10 @@ To set up and run the Fakegram application, follow these steps:
    ```
 
    - If java-23-openjdk and mvn are not installed on your machine you can run with this command:
-   '''bash
+   ```bash
    cd fake-gram
    .\mvnw javafx:run
-   '''  
+   ```  
 
 4. **Launch the Application**:
    - Open the application on your preferred device.
