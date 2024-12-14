@@ -34,6 +34,7 @@ import org.example.userManagement.entity.User;
 import org.example.userManagement.entity.validator.UserValidator;
 import org.example.userManagement.service.UserService;
 import org.example.userManagement.repository.UserDBRepository;
+import org.example.utils.TableDBCreator;
 
 import java.io.IOException;
 import java.util.HashMap;
