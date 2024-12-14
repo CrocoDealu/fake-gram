@@ -1,0 +1,23 @@
+
+.idea/
+*.iml
+*.iws
+
+target/
+
+# Logs
+*.log
+
+.DS_Store
+Thumbs.db
+
+*.class
+
+*.jar
+*.war
+*.ear
+
+.env
+*.properties
+
+.mvn/

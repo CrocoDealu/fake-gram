@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.controller.ProfileController"
+            styleClass="main-container">
+    <HBox alignment="CENTER" AnchorPane.topAnchor="0"
+          AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+          styleClass="header">
+        <Region HBox.hgrow="ALWAYS"/>
+        <StackPane styleClass="menu-button">
+        </StackPane>
+    </HBox>
+
+    <VBox alignment="CENTER" spacing="10"
+          AnchorPane.topAnchor="60"
+          AnchorPane.leftAnchor="20"
+          AnchorPane.rightAnchor="20"
+          styleClass="profile-section">
+
+        <StackPane styleClass="profile-picture-container">
+            <Circle fx:id="profilePictureBackground" radius="70" styleClass="profile-picture-background"/>
+            <ImageView fx:id="profilePicture" fitHeight="120.0" fitWidth="120.0" styleClass="profile-picture"/>
+            <Circle fx:id="profilePictureCircle" radius="60" styleClass="profile-picture-circle" visible="false" managed="false"/>
+        </StackPane>
+
+        <Label fx:id="usernameLabel" styleClass="username"/>
+
+        <Label fx:id="bioLabel"
+               wrapText="true"
+               styleClass="bio-text"
+               text="Your bio goes here"/>
+        <Button fx:id="friendsButton"
+                onAction="#onFriendsButtonClicked"
+                styleClass="friends-button"/>
+
+        <Button text="Change profile"
+                fx:id="changeProfileButton"
+                onAction="#onChangeProfile"
+                styleClass="friends-button"/>
+
+        <Button text="Log out"
+                fx:id="logoutButton"
+                onAction="#onLogout"
+                styleClass="friends-button"/>
+    </VBox>
+
+</AnchorPane>

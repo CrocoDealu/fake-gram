@@ -1,0 +1,70 @@
+.request-item {
+    /*-fx-background-color: #1a1a1a;*/
+    -fx-padding: 15;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 2);
+    -fx-alignment: CENTER_LEFT;
+}
+
+.request-text {
+    -fx-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.request-buttons {
+    -fx-spacing: 10;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.accept-button {
+    -fx-background-color: linear-gradient(to right, #FF007F, #AA00FF);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+    -fx-border-width: 1;
+}
+
+.accept-button:hover {
+    -fx-background-color: linear-gradient(to right, #CC0069, #8800CC);
+}
+
+.reject-button {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to right, #FF4C4C, #CC0000);
+    -fx-border-width: 1;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.reject-button:hover {
+    -fx-background-color: linear-gradient(to right, #CC3B3B, #990000);
+    -fx-border-color: linear-gradient(to right, #CC3B3B, #990000);
+    -fx-text-fill: white;
+}
+
+.header-label {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.horizontal-separator {
+    -fx-background-color: white;
+}
+
+.header-container {
+    -fx-padding: 20;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}

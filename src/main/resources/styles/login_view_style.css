@@ -1,0 +1,84 @@
+.root {
+    -fx-background-color: #000;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+
+.app-name {
+    -fx-text-fill: white;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-alignment: center;
+    -fx-font-family: "Lucida Handwriting", cursive;
+}
+
+.input-field {
+    -fx-background-color: #232222;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #888888;
+    -fx-border-color: #e6e6e6;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-max-width: 300px;
+    -fx-alignment: center;
+}
+
+.action-button {
+    -fx-background-color: linear-gradient(to right, #FF007F, #AA00FF);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-pref-width: 300px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+}
+
+.action-button:hover {
+    -fx-background-color: linear-gradient(to right, #CC0069, #8800CC);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+}
+
+.close-button {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-pref-width: 300px;
+}
+
+.close-button:hover {
+    -fx-background-color: #cc0000;
+}
+
+.input-error {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+    -fx-pref-width: 300px;
+    -fx-alignment: center;
+}
+
+.top-close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 5;
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-border-radius: 0 15 0 0;
+    -fx-background-radius: 0 15 0 0;
+    -fx-font-size: 14;
+    -fx-border-color: transparent;
+}
+
+.top-close-button:hover {
+    -fx-background-color: red;
+    -fx-text-fill: black;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="500.0" stylesheets="@../../styles/conversation_view_style.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.ConversationController">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="5" styleClass="top-bar">
+            <Button fx:id="backButton" onAction="#handleBackButtonClicked" styleClass="back-button" text="←" />
+            <Label fx:id="usernameLabel" styleClass="username-header" text="Username" />
+        </HBox>
+    </top>
+
+    <center>
+        <ListView fx:id="messageListView" styleClass="friends-list"/>
+    </center>
+
+    <bottom>
+        <VBox>
+            <HBox fx:id="selectedMessageBox" alignment="CENTER" spacing="10" styleClass="selected-message-container" visible="false">
+                <Label text="Replying to:" style="-fx-text-fill: white"/>
+                <Label fx:id="selectedMessageLabel" text="Idk" styleClass="selected-message-label" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Button fx:id="closeButton" text="X" onAction="#hideSelectedMessage" styleClass="close-button" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10" styleClass="hbox-with-padding">
+                <TextArea fx:id="textArea" styleClass="message-input" HBox.hgrow="ALWAYS" />
+                <Button fx:id="sendButton" onAction="#handleButtonClicked" styleClass="send-button" text="Send" />
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>

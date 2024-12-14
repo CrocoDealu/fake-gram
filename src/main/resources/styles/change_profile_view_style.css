@@ -1,0 +1,68 @@
+
+#rootPane {
+    -fx-background-color: black;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.container {
+    -fx-padding: 5;
+}
+
+.input-field {
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+.input-field:focused {
+    -fx-border-color: #FF007F;
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bio-field {
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+.text-area .content {
+    -fx-background-color: black;
+}
+
+.text-area .content .text {
+    -fx-fill: white;
+}
+
+.text-area {
+    -fx-prompt-text-fill: white;
+}
+
+.action-button {
+    -fx-background-color: linear-gradient(to right, #FF007F, #AA00FF);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-min-width: 200;
+}
+
+.action-button:pressed {
+    -fx-background-color: linear-gradient(to right, #CC0069, #8800CC);
+}
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(48, 47, 47, 0.5), 10, 0.5, 0, 0);
+}

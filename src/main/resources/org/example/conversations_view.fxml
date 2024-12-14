@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" style="-fx-background-color: black;" styleClass="anchor-pane" stylesheets="@../../styles/conversations_view_style.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.ConversationsController">
+    <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="480.0" spacing="15" styleClass="header-container" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <Label fx:id="messageLabel" styleClass="header-messages" text="Messages" />
+
+        <Region HBox.hgrow="ALWAYS" />
+
+        <Button fx:id="newMessageButton" onAction="#handleNewConversation" styleClass="icon-button" text="+" />
+    </HBox>
+    <ScrollPane fitToWidth="true" styleClass="custom-scrollpane, conversation-container" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="65.0">
+        <VBox fx:id="conversationContainer" spacing="15" styleClass="conversation-container">
+        </VBox>
+    </ScrollPane>
+</AnchorPane>

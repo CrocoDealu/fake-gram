@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<BorderPane fx:id="mainContainer" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.MainController">
+    <center>
+        <StackPane fx:id="contentPane" />
+    </center>
+
+    <bottom>
+        <HBox fx:id="bottomPanel" alignment="CENTER" spacing="20" styleClass="bottom-bar">
+            <Button fx:id="searchButton" onAction="#loadAddFriendView" styleClass="icon-button" />
+            <Button fx:id="friendRequestsButton" onAction="#loadFriendRequestView" styleClass="icon-button" />
+            <Button fx:id="messagesButton" onAction="#loadConversations" styleClass="icon-button" />
+            <Button fx:id="profileButton" onAction="#loadProfile" styleClass="icon-button" />
+        </HBox>
+    </bottom>
+</BorderPane>

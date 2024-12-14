@@ -1,0 +1,115 @@
+.anchor-pane {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.header-container {
+    -fx-padding: 10;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.icon-button {
+    -fx-background-color: linear-gradient(to right, #FF007F, #AA00FF);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 5 10;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+}
+
+.icon-button:hover {
+    -fx-background-color: linear-gradient(to right, #CC0069, #8800CC);
+}
+
+.header-messages {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.custom-scrollpane {
+    -fx-background: black;
+    -fx-border-color: transparent;
+    -fx-padding: 10;
+}
+
+.custom-scrollpane .viewport {
+    -fx-background: black;
+}
+
+.custom-scrollpane .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.custom-scrollpane .scroll-bar:vertical {
+    -fx-pref-width: 8px;
+}
+
+.custom-scrollpane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.custom-scrollpane .scroll-bar .thumb {
+    -fx-background-color: linear-gradient(to right, #FF007F, #AA00FF);
+    -fx-background-radius: 5;
+    -fx-pref-width: 10px;
+    -fx-pref-height: 10px;
+}
+
+.custom-scrollpane .scroll-bar .thumb:hover {
+    -fx-background-color: linear-gradient(to right, #CC0069, #8800CC);
+}
+
+.custom-scrollpane .scroll-bar .track {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 5;
+}
+
+.custom-scrollpane .scroll-bar .increment-button,
+.custom-scrollpane .scroll-bar .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-shape: "";
+    -fx-opacity: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+}
+
+.conversation-container {
+    -fx-background-color: black;
+    -fx-padding: 10;
+}
+
+.conversation-item {
+    -fx-background-color: #1a1a1a;
+    -fx-padding: 10;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+.conversation-picture {
+    -fx-fill: linear-gradient(to right, #FF007F, #AA00FF);
+}
+
+.conversation-username {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.conversation-message {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-opacity: 0.7;
+}
+
+.conversation-container {
+    -fx-padding: 10;
+}
+
+.friend-circle {
+    -fx-background-color: linear-gradient(to right, #FF007F, #AA00FF);
+}

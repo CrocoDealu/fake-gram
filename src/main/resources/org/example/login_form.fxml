@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane stylesheets="@../../styles/login_view_style.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoginFormController">
+    <VBox alignment="CENTER" prefWidth="400" spacing="15">
+        <Pane prefWidth="500" prefHeight="40" style="-fx-background-color: transparent;" managed="false">
+            <Button fx:id="closeTopButton" text="X" onAction="#handleClose" styleClass="top-close-button"
+                    layoutX="460" />
+        </Pane>
+
+        <Label fx:id="appNameLabel" styleClass="app-name" text="Fakegram" translateY="-30"/>
+
+        <TextField fx:id="usernameField" promptText="Username" styleClass="input-field" />
+        <Label fx:id="usernameFieldError" styleClass="input-error" textFill="red" visible="false" />
+
+        <PasswordField fx:id="passwordField" promptText="Password" styleClass="input-field" />
+        <Label fx:id="passwordFieldError" styleClass="input-error" textFill="red" visible="false" />
+
+        <VBox alignment="CENTER" spacing="10">
+            <Button fx:id="loginButton" onAction="#handleLogin" styleClass="action-button" text="Login" />
+            <Button fx:id="createAccountButton" onAction="#handleCreateAccount" styleClass="action-button" text="Create Account" />
+        </VBox>
+    </VBox>
+
+    <VBox fx:id="createAccountPane" alignment="CENTER" spacing="15" styleClass="root" translateY="600" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+        <TextField fx:id="firstNameField" promptText="Enter your first name" styleClass="input-field" />
+        <Label fx:id="firstNameErrorLabel" textFill="red" visible="false" />
+
+        <TextField fx:id="lastNameField" promptText="Enter your last name" styleClass="input-field" />
+        <Label fx:id="lastNameErrorLabel" textFill="red" visible="false" />
+
+        <TextField fx:id="createusernameField" promptText="Enter a username" styleClass="input-field" />
+        <Label fx:id="usernameErrorLabel" textFill="red" visible="false" />
+
+        <PasswordField fx:id="createpasswordField" promptText="Enter a password" styleClass="input-field" />
+        <Label fx:id="passwordErrorLabel" textFill="red" visible="false" />
+
+        <VBox alignment="CENTER" spacing="10">
+            <Button onAction="#handleCreateUser" styleClass="action-button" text="Create Account" />
+            <Button fx:id="backButton" layoutX="150" layoutY="300" onAction="#handleBackToLogin" styleClass="action-button" text="Back" />
+        </VBox>
+    </VBox>
+
+</StackPane>

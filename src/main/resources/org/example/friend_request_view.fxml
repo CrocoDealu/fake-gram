@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefWidth="300" spacing="10" stylesheets="@../../styles/friend_requests_view.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.FriendRequestsController">
+
+    <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="480.0" spacing="15" styleClass="header-container" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <Label fx:id="notificationsLabel" styleClass="header-label" text="Notifications" />
+    </HBox>
+
+<!--    <Separator prefWidth="300" styleClass="horizontal-separator" />-->
+
+    <VBox fx:id="friendRequestsBox" prefHeight="400" prefWidth="300" spacing="10">
+    </VBox>
+
+</VBox>
