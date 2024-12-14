@@ -59,12 +59,11 @@ To set up and run the Fakegram application, follow these steps:
    - Use your IDE or command line to compile and run the application.
 
    ```bash
-   mvn clean install
-   mvn spring-boot:run
+   mvn javafx:run
    ```
 
 4. **Launch the Application**:
-   - Open the application on your preferred mobile emulator or device.
+   - Open the application on your preferred device.
 
 ---
 
